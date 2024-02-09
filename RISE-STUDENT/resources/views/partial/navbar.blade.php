@@ -1,4 +1,4 @@
-<nav class="main-header navbar navbar-expand navbar-dark bg-black" style="outline-color: white">
+<nav class="main-header navbar navbar-expand navbar-dark" style="outline-color: white">
     <!-- Left navbar links -->
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">

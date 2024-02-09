@@ -8,15 +8,16 @@
 
 @section('content')
 <img src="{{asset('/logo/rise.jpg')}}" class="container-fluid rounded" style="background-color:white;" alt="">
-<div class="jumbotron bggo" style="background-color:#cbb667; padding-top:0.5cm; padding-bottom:0.5cm;">
+<br>
 {{-- coba --}}
+
 <div class="container-fluid pt-5">
   <div class="container pb-3">
     <div class="row">
       <div class="col-lg-4 col-md-6 pb-1">
         <div
-          class="d-flex bg-light shadow-sm border-top rounded mb-4"
-          style="padding: 30px"
+          class="d-flex bg-gray shadow-sm border-top rounded mb-4"
+          style="padding: 30px;"
         >
           <i
             class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"
@@ -32,7 +33,7 @@
       </div>
       <div class="col-lg-4 col-md-6 pb-1">
         <div
-          class="d-flex bg-light shadow-sm border-top rounded mb-4"
+          class="d-flex bg-gray shadow-sm border-top rounded mb-4"
           style="padding: 30px"
         >
           <i
@@ -49,8 +50,8 @@
       </div>
       <div class="col-lg-4 col-md-6 pb-1">
         <div
-          class="d-flex bg-light shadow-sm border-top rounded mb-4"
-          style="padding: 30px"
+          class="d-flex shadow-sm border-top rounded mb-4"
+          style="padding: 30px; background-color:#cbb667"
         >
           <i
             class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"
@@ -66,7 +67,7 @@
       </div>
       <div class="col-lg-4 col-md-6 pb-1">
         <div
-          class="d-flex bg-light shadow-sm border-top rounded mb-4"
+          class="d-flex bg-gray shadow-sm border-top rounded mb-4"
           style="padding: 30px"
         >
           <i
@@ -83,8 +84,8 @@
       </div>
       <div class="col-lg-4 col-md-6 pb-1">
         <div
-          class="d-flex bg-light shadow-sm border-top rounded mb-4"
-          style="padding: 30px"
+          class="d-flex shadow-sm border-top rounded mb-4"
+          style="padding: 30px; background-color:#cbb667"
         >
           <i
             class="flaticon-025-sandwich h1 font-weight-normal text-primary mb-3"
@@ -100,8 +101,8 @@
       </div>
       <div class="col-lg-4 col-md-6 pb-1">
         <div
-          class="d-flex bg-light shadow-sm border-top rounded mb-4"
-          style="padding: 30px"
+          class="d-flex shadow-sm border-top rounded mb-4"
+          style="padding: 30px; background-color:#cbb667"
         >
           <i
             class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"
@@ -119,11 +120,12 @@
   </div>
 </div>
 {{-- coba --}}
+<div class="jumbotron" style="background-color:#cbb667; padding-top:0.5cm; padding-bottom:0.5cm; margin-left:1.7cm;margin-right:1.7cm">
 
 <div class="row">
   <div class="col">
       <h1 class="display-4"><b>WHY US?</b></h1>
-      <p class="lead text-justify">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <p class="lead text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
       <hr class="my-4">
       <p class="text-justify">It uses utility classes for typography and spacing to space content out within the larger container.</p>
       <p class="lead">
@@ -139,7 +141,7 @@
 </div>
 </div>
 
-<div class="jumbotron bggo bg-dark rounded" style="padding-top:2%; padding-bottom:2%">
+<div class="jumbotron bggo bg-dark rounded" style="padding-top:2%; padding-bottom:2%;margin-left:1.7cm;margin-right:1.7cm">
     <div class="row">
         <div class="col ">
             <h3 class="text-warning"><b>RISE FACILITY</b></h3>
@@ -179,8 +181,8 @@
 
 {{-- coba --}}
 <section class="services" id="services">
-  <div class="container">
-    <div class="row">
+  <div class="container-fluid">
+    <div class="row" style="margin-left:1.7cm;margin-right:1.7cm">
       <div class="col-lg-12">
         <div class="section-heading bg-dark rounded">
           <h5 class="text-center text-white">Our Services</h5>
@@ -303,11 +305,12 @@
   </div>
 </section>
 {{-- coba end --}}
-<br>
-<h2 class="text-warning text-center container-fluid rounded" style="background-color:black"><b>PROGRAM</b></h2>
+<br><br><br>
+<h2 class="text-warning text-center rounded" style="margin-left:1.7cm;margin-right:1.7cm;background-color:rgb(63, 61, 61);"><br><b>PROGRAM</b><br><br></h2>
 
 {{-- Batas atas --}}
-<div class="row">
+<br>
+<div class="row" style="margin-left:1.7cm;margin-right:1.7cm">
   @forelse ($category as $item)
       <div class="col-4">
           <div class="card" style="background-color:#cbb667; padding-top:0.2cm;">
@@ -381,12 +384,13 @@
       </div>
     </div>
   </div> --}}
+  <br><br><br>
   <section class="testimonials" id="testimonials">
-    <div class="container">
+    <div class="container" style="margin-left:1.7cm;margin-right:1.7cm;">
       <div class="row">
         <div class="col-lg-12">
-          <div class="section-heading bg-black rounded">
-            <h5>Testimonials</h5>
+          <div class="section-heading rounded" style="background-color: rgb(63, 61, 61)">
+            <h5 class="text-white">Testimonials</h5>
             <h4 class="text-white">What They <em class="text-warning">Think</em></h4><br>
           </div>
         </div>
