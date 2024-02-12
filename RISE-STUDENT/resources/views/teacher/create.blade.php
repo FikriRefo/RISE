@@ -1,23 +1,31 @@
 @extends('partial.master')
 @section('judul')
-<H3><b>Update Category</b></H3>
+<H3><b>Add Teacher</b></H3>
 @endsection
 
 @section('content')
-<form action="/category/{{$category->id}}" method="POST" enctype="multipart/form-data">
+<form action="/teacher" method="POST" enctype="multipart/form-data" style="margin-left:5cm; margin-right:5cm">
     @csrf
-    @method('PUT')
+    <H3 class="text-center"><b>Add Teacher</b></H3><br>
       <div class="form-group">
         <label >Name</label>
-        <input type="text" name="name" class="form-control" value="{{$category->name}}">
+        <input type="text" name="name" class="form-control">
       </div>
       @error('name')
           <div class="alert alert-danger">{{$message}}</div>
       @enderror
   
       <div class="form-group">
+        <label >NIK</label>
+        <input type="number" name="nik" class="form-control">
+      </div>
+      @error('nik')
+          <div class="alert alert-danger">{{$message}}</div>
+      @enderror
+
+      <div class="form-group">
         <label>Description</label>
-        <textarea name="description" class="form-control" id="" cols="30" rows="10">{{$category->description}}</textarea>    
+        <textarea name="description" class="form-control" id="" cols="30" rows="10"></textarea>    
       </div>
       @error('description')
           <div class="alert alert-danger">{{$message}}</div>
@@ -36,4 +44,3 @@
       
     </form>
 @endsection
-

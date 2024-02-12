@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MyController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\TeacherController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,4 @@ Route::get('/aboutus', function(){
 });
 Route::resource('/',MyController::class);
 Route::resource('/category',CategoryController::class);
+Route::resource('/teacher',TeacherController::class);

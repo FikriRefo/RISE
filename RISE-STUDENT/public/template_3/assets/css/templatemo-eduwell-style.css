@@ -788,7 +788,7 @@ services
 }
 
 .services .owl-dots .active {
-  background-color: #dc8cdb;
+  background-color: #cbb667;
 }
 
 
@@ -1057,7 +1057,7 @@ section.testimonials:after {
 .testimonials .item span {
   font-size: 13px;
   font-weight: 700;
-  color: #dc8cdb;
+  color: #fff;
 }
 
 .testimonials .item img {
@@ -1082,7 +1082,7 @@ section.testimonials:after {
 }
 
 .testimonials .owl-dots .active {
-  background-color: #dc8cdb;
+  background-color: #cbb667;
 }
 
 

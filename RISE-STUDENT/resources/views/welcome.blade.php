@@ -24,7 +24,7 @@
           ></i>
           <div class="pl-4">
             <h4>RISE MOTTO</h4>
-            <p class="m-0">
+            <p class="m-0 text-white">
               Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
               lorem amet elitr vero...
             </p>
@@ -41,7 +41,7 @@
           ></i>
           <div class="pl-4">
             <h4>RISE MOTTO</h4>
-            <p class="m-0">
+            <p class="m-0 text-white">
               Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
               lorem amet elitr vero...
             </p>
@@ -75,7 +75,7 @@
           ></i>
           <div class="pl-4">
             <h4>RISE MOTTO</h4>
-            <p class="m-0">
+            <p class="m-0 text-white">
               Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
               lorem amet elitr vero...
             </p>
@@ -120,32 +120,64 @@
   </div>
 </div>
 {{-- coba --}}
-<div class="jumbotron" style="background-color:#cbb667; padding-top:0.5cm; padding-bottom:0.5cm; margin-left:1.7cm;margin-right:1.7cm">
+<div class="jumbotron text-black bg-image" style="background-color:white; padding-top:0.5cm; padding-bottom:0.5cm; margin-left:1.7cm;margin-right:1.7cm">
 
-<div class="row">
+<div class="row rounded" style="background-image:url('{{asset('/logo/bg-why.png')}}'); background-size:100%;  background-position:center; background-repeat:no-repeat;">
   <div class="col">
       <h1 class="display-4"><b>WHY US?</b></h1>
-      <p class="lead text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+      <p class="lead text-justify" style="margin-left:0.5cm;margin-top:1cm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
       <hr class="my-4">
-      <p class="text-justify">It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <p class="lead">
-        <br>
+      <p class="text-justify" style="margin-left:0.5cm">It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <p class="lead" style="margin-left:0.5cm">
         <a class="btn btn-dark btn-lg" href="/aboutus" role="button">Learn more</a>
       </p>  
   </div>
   <div class="col">
     <div class="text-center" style="padding-top:1cm;padding-left:1cm">
-      <img style="margin-top:-2cm; margin-bottom:-1cm" src="{{asset('logo/study.png')}}" class="rounded-circle" alt="...">
+      <img style="margin-top:-2cm; margin-bottom:-1cm; margin-right:-2cm; margin-left:-2.5cm; width:120%; height:120%" src="{{asset('logo/study.png')}}" class="rounded-circle" alt="...">
     </div>
   </div>
 </div>
 </div>
 
-<div class="jumbotron bggo bg-dark rounded" style="padding-top:2%; padding-bottom:2%;margin-left:1.7cm;margin-right:1.7cm">
+<div class="jumbotron bggo bg-white rounded" style="padding-top:2%; padding-bottom:2%;margin-left:1.7cm;margin-right:1.7cm">
     <div class="row">
         <div class="col ">
             <h3 class="text-warning"><b>RISE FACILITY</b></h3>
-            <p class="text-justify text-white" style="padding-right:1cm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            {{-- Accordions --}}
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Facility 1
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Facility 2
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Facility 3
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+            </div>
+            {{-- Accordions End --}}
         </div>
         <div class="col" style="padding-top: 1.2cm">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -386,8 +418,8 @@
   </div> --}}
   <br><br><br>
   <section class="testimonials" id="testimonials">
-    <div class="container" style="margin-left:1.7cm;margin-right:1.7cm;">
-      <div class="row">
+    <div class="container-fluid">
+      <div class="row" style="margin-left:1.7cm;margin-right:1.7cm;">
         <div class="col-lg-12">
           <div class="section-heading rounded" style="background-color: rgb(63, 61, 61)">
             <h5 class="text-white">Testimonials</h5>
@@ -396,53 +428,53 @@
         </div>
         <div class="col-lg-12">
           <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
-            <div class="item">
+            <div class="item" style="background-color:#cbb667">
               <p>“just think about TemplateMo if you need free CSS templates for your website”</p>
                 <h4>Catherine Walk</h4>
                 <span>CEO &amp; Founder</span>
-                <img src="{{asset('/template_3/assets/images/quote.png')}}" alt="">
+                <img src="{{asset('/logo/chat.png')}}"  alt="">
             </div>
-            <div class="item">
+            <div class="item" style="background-color:#cbb667">
               <p>“think about our website first when you need free HTML templates for your website”</p>
                 <h4>David Martin</h4>
                 <span>CTO of Tech Company</span>
-                <img src="{{asset('/template_3/assets/images/quote.png')}}" alt="">
+                <img src="{{asset('/logo/chat.png')}}"  alt="">
             </div>
-            <div class="item">
+            <div class="item" style="background-color:#cbb667">
               <p>“just think about our website wherever you need free templates for your website”</p>
                 <h4>Sophia Whity</h4>
                 <span>CEO and Co-Founder</span>
-                <img src="{{asset('/template_3/assets/images/quote.png')}}" alt="">
+                <img src="{{asset('/logo/chat.png')}}"  alt="">
             </div>
-            <div class="item">
+            <div class="item" style="background-color:#cbb667">
               <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
                 <h4>Helen Shiny</h4>
                 <span>Tech Officer</span>
-                <img src="{{asset('/template_3/assets/images/quote.png')}}" alt="">
+                <img src="{{asset('/logo/chat.png')}}"  alt="">
             </div>
-            <div class="item">
+            <div class="item" style="background-color:#cbb667">
               <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
                 <h4>George Soft</h4>
                 <span>Gadget Reviewer</span>
-                <img src="{{asset('/template_3/assets/images/quote.png')}}" alt="">
+                <img src="{{asset('/logo/chat.png')}}"  alt="">
             </div>
-            <div class="item">
+            <div class="item" style="background-color:#cbb667">
               <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
                 <h4>Andrew Hall</h4>
                 <span>Marketing Manager</span>
-                <img src="{{asset('/template_3/assets/images/quote.png')}}" alt="">
+                <img src="{{asset('/logo/chat.png')}}"  alt="">
             </div>
-            <div class="item">
+            <div class="item" style="background-color:#cbb667">
               <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
                 <h4>Maxi Power</h4>
                 <span>Fashion Designer</span>
-                <img src="{{asset('/template_3/assets/images/quote.png')}}" alt="">
+                <img src="{{asset('/logo/chat.png')}}" alt="">
             </div>
-            <div class="item">
+            <div class="item" style="background-color:#cbb667">
               <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
                 <h4>Olivia Too</h4>
                 <span>Creative Designer</span>
-                <img src="{{asset('/template_3/assets/images/quote.png')}}" alt="">
+                <img src="{{asset('/logo/chat.png')}}" alt="">
             </div>
           </div>
         </div>
